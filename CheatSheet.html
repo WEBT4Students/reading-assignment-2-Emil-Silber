@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Cheat Sheet</title>
+        <style>
+         a:link {
+        color: red;
+        }
+
+        a:visited {
+        color: green;
+        }
+
+        a:hover {
+        color: hotpink;
+        }
+
+        a:active {
+        color: blue;
+        }
+
+        pre {
+        text-align: middle;
+        }
+
+        h1 {
+            text-align: center;
+            background-color:rgb(174, 174, 174)
+        }
+
+        h2 {
+        text-decoration: underline;
+        }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <hr>
+            <h1> Reading Assignment 1: Cheat Sheet</h1>
+            <hr>
+            <section>
+                <h2> Word Wide Web General</h2>
+                <p> 
+                    <strong>1. What are most essential technologies that made the World Wide Web such a success?</strong> <br>
+                    HTTP (Hypertext Transfer Protocol, Hypertext Markup Language (HTML), Uniform Resource Locator (URLs) 
+                </p>
+                <p>
+                    <strong> 2. How are resources (html pages, images, etc) addressed in the web? </strong> <br>
+                    URL is the most common form of resource identifier.
+                </p>
+                <p> 
+                    <strong> 3. What are the general components of an URL? </strong> <br>
+                    Five Components: Scheme, Authority, Path, Query, Fragment <br>
+                    Three Subcomponents: Userinfo, Host, Port
+                </p>
+            </section>
+            <section>
+                <h2>Web Server</h2>
+                <p>
+                    <strong> 1. What is a web server? </strong> <br>
+                    A web server is a computer that stores web server software and a website's component files
+                </p>
+                <p> 
+                    <strong> 2. What does a web server do? </strong> <br>
+                    A web server uses HTTP and other protocols to respond to client requests made over the World Wide Web.
+                </p>
+                <p> 
+                    <strong> 3. How can content be stored on a web server? </strong> <br>
+                    Content can be stored as <abbr title="Pre-existing files">static content</abbr> or as <abbr title="Generated at the time of the request">dynamic content</abbr>
+                </p>
+                <p> 
+                    <strong> 4. How is content in webpages described? </strong> <br>
+                    Web content refers to the textual, <abbr title="Audio Content">aural</abbr> or visual content published on a website.
+                </p>  
+            </section>
+            <section>
+                <h2>Web Client</h2>
+                <p>
+                    <strong> 1. What is a web client? </strong> <br>
+                    A Web client typically refers to the Web browser in the user's machine or mobile device.
+                </p>
+                <p> 
+                    <strong> 2. What does a web client do? </strong> <br>
+                    A web client connects to a web server over HTTP.
+                </p>
+                <p> 
+                    <strong> 3. Is the Web Client and Web Browser the same? </strong> <br>
+                    No, Web Browser is only a part of the Web Client. <br>
+                    A Web Browser delivers Web pages received from the Web Server to the Web Client.
+                </p>
+            </section>
+            <section>
+                <h2>Hello World</h2>
+                <p>
+                    <strong>1. What is the html head element?</strong> <br>
+                    The &lt;head&gt; element is a container for <abbr title="A set of data that describes and gives information about other data">metadata</abbr> and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. <br>
+                    Defines information about the document.
+                </p>
+                <p>
+                    <strong>2. What does <span style="border: 1px solid black">&lt;!DOCTYPE html&gt;</span> mean?</strong> <br>
+                    All HTML documents must start with a &lt;!DOCTYPE html&gt; declaration. <br> 
+                    It is an "information" to the browser about what document type to expect. 
+                </p>
+                <p>
+                    <strong> 3. What are the two topmost elements within the html element? </strong> <br>
+                    They are &lt;head&gt; and &lt;body&gt;.
+                </p>
+                <p>
+                    <strong>4. How to emphasize a text and how is it displayed in the browser?</strong> <br>
+                    With &lt;em&gt; and &lt;/em&gt;, it is displayed fancy and italic.
+                </p>
+                <p>
+                    <strong>5. How to markup important text and how is it displayed in the browser?</strong> <br>
+                    With &lt;mark&gt; and &lt;/mark&gt;, it is displayed with a yellow background behind the text
+                </p>
+            </section>
+        </div>
+        <div>
+            <hr>
+            <h1>Reading Assignment 2: Cheat Sheet</h1>  
+            <hr>   
+            <section>
+                <h2> HTML </h2>
+                <p>
+                    <strong> 1. Name the components of html elements properly </strong> <br>
+                    An HTML element is defined by a start tag, some content, and an end tag. <br>
+                    It is everything from the start tag to the end tag. <br>
+                </p>        
+                <p>
+                    <strong> 2. Identify void elements and how they are denoted</strong> <br>
+                    HTML elements with no content are called void (or empty) elements. <br>
+                    Example: <strong>&lt;br&gt;</strong>, defines a line break.
+                </p>       
+                <p>
+                    <strong> 3. Identify attributes </strong> <br>
+                    <ul>
+                        <li>All HTML elements can have attributes</li>
+                        <li>Attributes provide additional information about elements</li> 
+                        <li>Attributes are always specified in the start tag</li>
+                        <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+                    </ul>
+                </p>       
+                <p>
+                    <strong> 4. Write down the correct <span style="border: 1px solid black">&lt;DOCTYPE&gt;</span> declaration for html 5 </strong> <br>
+                    &lt;!DOCTYPE html&gt;
+                </p>
+                <p>
+                    <strong>5. Write down syntactically correct statements for the following element</strong><br>
+                    <ul>
+                        <p>
+                            <strong><li>Article <span style="border: 1px solid black">&lt;article&gt;</span></li></strong>
+                            The <strong>&lt;article&gt;</strong> tag specifies independent, self-contained content.<br>
+                            An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+                        </p>
+                        <p>
+                            <strong><li>Body <span style="border: 1px solid black">&lt;body&gt;</span></li></strong>
+                            The <strong>&lt;body&gt;</strong> tag defines the document's body.<br>
+                            The <strong>&lt;body&gt;</strong> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+                        </p>
+                        <p>
+                            <strong><li>Line break <span style="border: 1px solid black">&lt;br/&gt;</span></li></strong>
+                            Use <strong>&lt;br&gt;</strong> if you want a line break (a new line) without starting a new paragraph
+                        </p>
+                        <p>
+                            <strong><li>Headings <span style="border: 1px solid black">&lt;h1&gt;</span>, ...</li></strong>
+                            The <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> tags are used to define HTML headings. <br>
+                            <strong>&lt;h1&gt;</strong> defines the most important heading. <br>
+                            <strong>&lt;h6&gt;</strong> defines the least important heading.
+                        </p>
+                        <p>
+                            <strong><li>Section with meta-information <span style="border: 1px solid black">&lt;head&gt;</span></li></strong>
+                            The <strong>&lt;head&gt;</strong> element is a container for metadata (data about data) and is placed between the <strong>&lt;html&gt;</strong>tag and the <strong>&lt;body&gt;</strong> tag. <br>
+                            Metadata is data about the HTML document. Metadata is not displayed.
+                        </p>
+                        <p>
+                            <strong><li>Top level element <span style="border: 1px solid black">&lt;html&gt;</span></li></strong>
+                            The <strong>&lt;html&gt;</strong> element is the root element and it defines the whole HTML document.
+                        </p>
+                        <p>
+                            <strong><li>Image named <span style="border: 1px solid black">Team.jpg</span> <span style="border: 1px solid black">&lt;img src="Team.jpg"&gt;</span></li></strong>
+                            The <strong>&lt;img&gt;</strong> tag is used to embed an image in an HTML page. <br>
+                            Images are not technically inserted into a web page; images are linked to web pages. <br>
+                            The <strong>&lt;img&gt;</strong>  tag creates a holding space for the referenced image. <br>
+                            The <strong>&lt;img&gt;</strong>  tag has two required attributes: <br>
+                            <strong>src</strong> - Specifies the path to the image <br>
+                            <strong>alt</strong> - Specifies an alternate text for the image, if the image for some reason cannot be displayed 
+                        </p>
+                        <p>
+                            <strong><li>Paragraph <span style="border: 1px solid black">&lt;p&gt;</span></li></strong>
+                            A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+                        </p>
+                        <p>
+                            <strong><li>Section <span style="border: 1px solid black">&lt;section&gt;</span></li></strong>
+                            The <strong>&lt;section&gt;</strong> tag defines a section in a document.
+                        </p>
+                        <p>
+                            <strong><li>Label appearing in the title bar <span style="border: 1px solid black">&lt;title&gt;</span></li></strong>
+                            The title attribute defines some extra information about an element. <br>
+                            The value of the title attribute will be displayed as a tooltip when you mouse over the element
+                        </p>
+                        <p>
+                            <strong><li>Link to other pages <span style="border: 1px solid black">&lt;a&gt;</span></li></strong>
+                            The <strong>&lt;a&gt;</strong> tag defines a hyperlink, which is used to link from one page to another. <br>
+                            The most important attribute of the <strong>&lt;a&gt;</strong>  element is the href attribute, which indicates the link's destination. <br>
+                            By default, links will appear as follows in all browsers: <br>
+                            An unvisited link is underlined and blue <br>
+                            A visited link is underlined and purple <br>
+                            An active link is underlined and red 
+                        </p>
+                        <p>
+                            <strong><li>Comment</li></strong>
+                            The comment tag is used to insert comments in the source code. <br>
+                            Comments are not displayed in the browsers.
+                        </p>
+                        <p>
+                            <strong><li>Head with title and meta elements</li></strong>
+                            The <strong>&lt;title&gt;</strong>  element defines the title of the document.<br>
+                            The <strong>title</strong>  must be text-only, and it is shown in the browser's title bar or in the page's tab.<br>
+                            The <strong>&lt;meta&gt;</strong> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+                        </p>              
+                    </ul>
+                </p>
+            </section>      
+            <section>        
+                <h2> CSS </h2>
+                <p> 
+                    <strong> 1. Name the components of a css rule properly </strong> <br>
+                    <ins>A CSS rule consists of a selector and a declaration block.</ins><br>
+                    <p>
+                        <img src="css.png" alt="cool image (trust)"> <br>
+                    </p>
+                    The selector points to the HTML element you want to style.<br>
+                    The declaration block contains one or more declarations separated by semicolons.<br>
+                    Each declaration includes a CSS property name and a value, separated by a colon.<br>
+                    Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. 
+                </p>
+                <p>
+                    <strong> 2. Use combinators properly: direct child, descendant, adjacent sibling, sibling </strong> <br>
+                    <ul>
+                        <li>descendant selector (space)</li>
+                        <li>child selector (>)</li>  
+                        <li>adjacent sibling selector (+) </li> 
+                        <li>general sibling selector (~)</li>  
+                    </ul>
+                </p>
+                <p>
+                    <strong> 3. Specify colors by color names and in hexadecimal notation </strong> <br>
+                    <ul>
+                        <li>Tomato = #FF6347</li>
+                        <li>Orange = #FFA500</li>
+                        <li>Gray   = #3CB371</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong> 4. Declarations for color, background color </strong> <br>
+                    <strong>style</strong>="color:Tomato;" <br>
+                    <strong>style</strong>="background-color: Tomato;"
+                </p>
+                <p>
+                    <strong> 5. Pseudo classes for the <span style="border: 1px solid black">&lt;a&gt;</span> element </strong> <br>
+                    <pre>
+a:link {            Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+    color: red;     Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
+  }
+                            
+a:visited {
+    color: green;
+  }
+                            
+a:hover {
+    color: hotpink;
+  }
+                            
+a:active {
+    color: blue;
+  }
+                    </pre>
+                </p>
+                <p>
+                    <strong> 6. Declaration for background image </strong> <br>
+                    <pre>
+body { 
+    background-image: url("image.name"); 
+  } 
+                    </pre>
+                </p>
+                <p>
+                    <strong> 7. Declaration for text alignment (left, right, center, justify) </strong> <br>
+                    <strong>text-align</text-align></strong>: center/right/left/justify; <br>
+                    <ul>
+                        <li><strong>center:</strong> display in center/li>
+                        <li><strong>right:</strong> display on the right</li>
+                        <li><strong>left:</strong> display on the left</li>
+                        <li><strong>justify:</strong> each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers)</li>
+                    </ul>
+
+
+                </p>
+                <p>
+                    <strong> 8. Declaration for text decoration (overline, underline, line-through) </strong> <br>
+                    <strong>text-decoration-line:</strong> overline/underline/line-through
+                    <ul>
+                        <li><strong>overline:</strong> line over text</li>
+                        <li><strong>underline:</strong> line below text</li>
+                        <li><strong>line-through:</strong> line through text</li>
+                        <li><strong>combinations:</strong> you can combine the 3 lines</li>
+                    </ul>
+                </p>                
+                <p>
+                    <strong> 9. Declaration for text transformation (uppercase, lowercase, capitalize) </strong> <br>
+                    <strong>text-transform::</strong> uppercase/lowercase/capitalize
+                    <ul>
+                        <li><strong>uppercase:</strong> every letter is uppercase</li>
+                        <li><strong>lowercase:</strong> every letter is lowercase</li>
+                        <li><strong>capitalize:</strong> every first letter of a word is uppercase</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong> 10. Identify the difference between serif and sans-serif fonts </strong> <br>
+                    1. <strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance. <br>
+                    2. <strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.<br>
+                    <img src="Sans-serif.png" alt="Sans-Serif" width="100" height="100"> <img src="Serif.png" alt="Serif" width="60" height="100">
+                </p>
+                <p>
+                    <strong> 11. Declarations for font families </strong> <br>
+                    (Generic Font Family) <br>
+                    <strong>font-family:</strong> serif/sans serif/monospace/Cursive/Fantasy<br> 
+                    OR <br>
+                    (Examples of Font Names)<br>
+                    <strong>font-family:</strong> "Lucida Console" / "Times New Roman" / "Arial"
+                </p>
+                <p>
+                    <strong> 12. Declarations for font style normal and italic </strong> <br>
+                    <strong>Font-style:</strong> normal/italic/oblique
+                    <ul>
+                        <li><strong>Normal:</strong> normal</li>
+                        <li><strong>Italic:</strong> italic</li>
+                        <li><strong>oblique:</strong> “leaning” (similar to italic)</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong> 13. Declarations for font sizes </strong> <br>
+                    <strong>font-size:</strong> px/em/%/vw 
+                    <ul>
+                        <li><strong>px:</strong> normal</li>
+                        <li><strong>em:</strong> italic</li>
+                        <li><strong>%:</strong> percentage (100% is normal)</li>
+                        <li><strong>vw:</strong> “viewport width”, Responsive Font Size, text size will follow the size of the browser window</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong> 14. Declarations for font weights</strong> <br>
+                    <strong>font-weight:</strong> normal/lighter/bold
+                    <ul>
+                        <li><strong>Normal:</strong> normal</li>
+                        <li><strong>Lighter:</strong> light</li>
+                        <li><strong>Bold:</strong> thick</li>
+                    </ul>
+                </p>        
+            </section>
+        </div>       
+    </body>
+</html>
